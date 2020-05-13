@@ -1,0 +1,43 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Prakhar Chhipa
+tagline:             Sr Software Engineer
+url:                 https://prakharchhipa.in
+paginate:            10
+paginate_path:      ""
+paginate_path:      "blog/page:num"
+baseurl:             ""
+
+defaults:
+  - scope:
+      path: "_assets/img"
+    values:
+      image: true
+
+keep_files:
+  - /js/typed.min.js.map
+  - /js/aos.js.map
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Prakhar Chhipa
+  url:               https://prakharchhipa.in
+  email:             prakharchhipa@gmail.com
+
+# Custom vars
+version:             3.0.1
+github:
+  repo:              https://github.com/prakharchhipa/
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist

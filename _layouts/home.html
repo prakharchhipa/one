@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <div>
+  <div class="home-background">
+    <main>
+      <div id="home" class="home-section">
+          <div class="bouncy-button animated fadeInUp"><a class="action-button" href="#about">Get to know me</a></div>
+        <div id="my-picture" class="my-picture"><img class="profile-image" src="./assets/me.png" /></div>
+        <div class="pattern"></div>
+        <div class="title">
+          <div id="first-name" class="title-text">Prakhar</div>
+          <div id="last-name" class="title-text outline">Chhipa</div>
+        </div>
+      </div>
+      <div id="about" class="about-section">
+        <div class="container">
+          <div class="subsection-title">A little bit</div>
+          <div class="section-title">About Me</div>
+          <div class="text">
+            <div id="hero">
+              <div class="hero-container aos-init aos-animate" data-aos="fade-in">
+                <p>Hello! My name is Prakhar Chhipa, I'm <span class="typed" data-typed-items="Developer., Freelancer., Photographer."></span></p>
+              </div>
+            </div>
+            My passion for creating new things is something that has brought me here. Sticking to that I use this creativity to conquer technical challenges at <a href="https://www.linkedin.com/company/airtel-x-labs" target="_blank">Airtel X Labs, India</a>.
+            I design and develop software for a telecom giant covering millions of customers in various line of businesses.
+            <p>When I am not busy digging the codes, I find myself cheering on the greatest of all time, Lionel Messi. Yes, it's all around football, foosball-table and FIFA(Xbox).
+              With that I have a little wanderlust soul which loves exploring places with eyes of my canon 1300D and capture the best of the streets. Collection of electronic gadgets queued along.
+            </p>
+          </div>
+          <div class="request-button-container"><a class="request-button dark" href="https://prakharchhipa.in/resume" target="_blank">Full Resume ➞</a></div>
+          <div class="social-container">
+            <div class="social"><a href="https://www.linkedin.com/in/prakharchhipa" target="_blank"><img class="social-icon" src="./assets/linkedin.png"></a></div>
+            <div class="social"><a href="https://www.instagram.com/prakharchhipa" target="_blank"><img class="social-icon" src="./assets/instagram.png"></a></div>
+            <!--<div class="social"><a href="https://prakharchhipa.in/blog" target="_blank"><img class="social-icon" src="./assets/blog.png"></a></div>-->
+            <!--<div class="social"><a href="https://youtube.com/prakharchhipa"><img class="social-icon" href="youtube.com/prakharchhipa" src="./assets/youtube.png"></a></div>-->
+          </div>
+        </div>
+      </div>
+    <div id="contact" class="contact-section">
+      <div class="container">
+        <div class="subsection-title">Get in touch.</div>
+        <div class="section-title light">Contact Me</div>
+        <div class="text light">If you'd like to work with me, would like to get more information, or if you'd just like to chat
+          then email me to get in touch.</div>
+        <div class="request-button-container"><a class="request-button light" href="mailto:prakharchhipa@gmail.com">Email Me ➞</a></div>
+      </div>
+    </div>
+    </main>
+    <small>
+      &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+    </small>
+  </div>
+  </div>
+  <!--<footer class="footer">
+      <small>
+        &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+      </small>
+  </footer>-->
+
+  {% if site.analytics_id %}
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '{{ site.analytics_id }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+
+</body>
+
+</html>

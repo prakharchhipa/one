@@ -1,0 +1,19 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+  //Import
+@import "variables";
+@import "base";
+@import "type";
+@import "syntax";
+@import "code";
+@import "layout";
+@import "masthead";
+@import "_posts";
+@import "pagination";
+@import "message";
+@import "home";
+@import "animate";
+@import "aos";
+$siteurl: "{{ site.url }}";
